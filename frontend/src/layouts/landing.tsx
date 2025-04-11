@@ -10,10 +10,15 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({ children }) => {
         <div className="h-full">
             <header className="flex items-center sticky top-0 h-12 bg-white border-b">
                 <div className="flex justify-between items-center w-6xl mx-auto px-6">
-                    <p className="font-bold">
-                        Script
-                        <span className="text-blue-600 font-black">Wiz</span>
-                    </p>
+                    <div className="flex items-center space-x-1">
+                        <img className="h-5" src="/logo.svg" alt="" />
+                        <p className="font-bold">
+                            Script
+                            <span className="text-blue-600 font-black">
+                                Wiz
+                            </span>
+                        </p>
+                    </div>
                     <div>
                         <nav className="text-sm flex space-x-4">
                             <a
