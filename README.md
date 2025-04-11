@@ -1,8 +1,6 @@
-Sure! Here’s an updated version of the README with emojis to make it more engaging and fun:
-
----
-
 # **Scriptwiz - README** 🚀
+
+![Dashboard](images/1.png)
 
 **Scriptwiz** is an innovative web application that enables users to write, execute, and visualize their code directly from the browser. With an intuitive user interface and seamless backend architecture, Scriptwiz supports both Python and R code execution inside isolated Docker containers to generate static or dynamic visualizations.
 
@@ -57,8 +55,31 @@ The backend is powered by **Flask** and is responsible for orchestrating the exe
 4. **Output Capture**: Once the code has finished running, the generated visualization is captured and sent back to the frontend.  
 5. **Visualization Display**: The frontend displays the visualization to the user, whether it's a static image or an interactive plot.
 
-### Example Code Adjustment ✏️:
-For Python's Matplotlib, users are prompted to ensure the plot is named `plt` in the code. The backend automatically appends a line to save the plot to an image file.
+### **Problems Encountered and Solutions Developed** ✏️:
+
+**Problem**: One of the key challenges was ensuring that the user-generated code would consistently save the generated plot to an image file. Different users might use different variable names or methods for saving their plots, making it difficult to capture and store the output accurately.
+
+**Solution**:  
+- For Python’s **Matplotlib**, the backend encountered an issue where users might name their plot object something other than `plt`, which is the default for many Matplotlib examples. This inconsistency caused challenges when trying to capture and save the plot.
+- To address this, the frontend was designed to prompt users to ensure that their plot object was named `plt`, aligning with the default Matplotlib naming convention. This standardization helped streamline the plot-saving process.
+- On the backend, a solution was implemented where the system automatically appended a line of code to save the `plt` object to an image file. This ensured that the plot was properly saved and returned to the frontend, even if the user didn’t explicitly include the saving logic in their code.
+
+This solution helped maintain consistency and ensured that the system could reliably capture and return visualizations, while still running in secure, isolated Docker containers.
+
+## **Screenshots** 📸
+
+Here are some screenshots of the Scriptwiz application:
+
+### 1. Landing Page
+![Dashboard](images/1.png)
+
+### 2. Code Editor Interface
+![Code Editor](images/2.png)
+
+### 3. Visualization Output
+![Visualization](images/3.png)
+
+
 
 ## **Getting Started** 🏁
 
