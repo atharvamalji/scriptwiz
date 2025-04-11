@@ -1,6 +1,6 @@
 # **Scriptwiz - README** 🚀
 
-![Dashboard](images/1.png)
+![Dashboard](images/1.PNG)
 
 **Scriptwiz** is an innovative web application that enables users to write, execute, and visualize their code directly from the browser. With an intuitive user interface and seamless backend architecture, Scriptwiz supports both Python and R code execution inside isolated Docker containers to generate static or dynamic visualizations.
 
@@ -71,13 +71,13 @@ This solution helped maintain consistency and ensured that the system could reli
 Here are some screenshots of the Scriptwiz application:
 
 ### 1. Landing Page
-![Dashboard](images/1.png)
+![Dashboard](images/1.PNG)
 
 ### 2. Code Editor Interface
-![Code Editor](images/2.png)
+![Code Editor](images/2.PNG)
 
 ### 3. Visualization Output
-![Visualization](images/3.png)
+![Visualization](images/3.PNG)
 
 
 
